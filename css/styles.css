@@ -1,14 +1,90 @@
-.logo {
-    color: #000000;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
-    text-decoration: none;
-    letter-spacing: 0.03em;
+body {
+  font-family: Roboto, sans-serif;
+  background-color: #ffffff;
+  color: #757575;
+  --title-color: #212121;
+  --accent-color: #2196f3;
 }
-.accent {
-    color: #2196F3;
-    text-decoration: none;
+/*  цвет основного текста #757575
+    вторичный цвет (заголовки) #212121
+    цвет акцента #2196f3
+    белый цвет #FFFFFF*/
+
+ul {
+  list-style: none;
+}
+.logo {
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.logo .accent {
+  color: var(--accent-color);
+}
+.site-nav .link {
+  color: var(--title-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+/*секция Герой*/
+section.hero {
+  background-color: #2f303a;
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.feature-list-subtitle {
+  color: var(--title-color);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+}
+.feature-list-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+/* секция КОМАНДА*/
+.section.team {
+  background-color: #f5f4fa;
+}
+h2 {
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team-list .name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--title-color);
+}
+.team-list .proffession {
+  ont-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
 }
