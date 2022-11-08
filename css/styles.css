@@ -3,116 +3,145 @@
     цвет акцента #2196f3
     белый цвет #FFFFFF*/
 body {
-  font-family: Roboto, sans-serif;
-  font-size: 14px;
-  background-color: #ffffff;
-  color: #757575;
-  --title-color: #212121;
+  --text-primary-color: #757575;
+  --h-color: #212121;
+  --hero-text-color: #ffffff;
   --accent-color: #2196f3;
+  --bg-primary-color: #ffffff;
+  --bg-secondary-color: #f5f4fa;
+  --bg-footer-color: #2f303a;
+  background-color: var(--bg-primary-color);
+  color: var(--text-primary-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
 }
-h2 {
-  color: var(--title-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-address {
-  font-style: normal;
-}
-.link {
-  color: #757575;
-  text-decoration: none;
-}
-ul {
+.unmark {
   list-style: none;
 }
-.accent {
+/* accent hover */
+.header-nav .link:hover,
+.header-nav .link:focus,
+.contacts .link:hover,
+.contacts .link:focus {
   color: var(--accent-color);
 }
+h2,
+h3 {
+  color: var(--h-color);
+}
+/* header */
 .logo {
   color: #000000;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  text-decoration: none;
 }
-.site-nav .link
-{
-  color: var(--title-color);
+.header-nav .link {
+  text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: var(--h-color);
 }
-.site-nav .link:hover,
-.site-nav .link:focus,
-.contacts .link:hover,
-.contacts .link:focus {
-color: var(--accent-color);
+.logo .accent,
+.header-nav .currant {
+  color: var(--accent-color);
 }
-.site-nav .currant {
-  color: var(--accent-color)
+.contacts .link {
+  text-decoration: none;
+  color: var(--text-primary-color);
 }
-/*секция Герой*/
+/* section Hero */
 section.hero {
-  background-color: #2f303a;
+  background-color: var(--bg-footer-color);
 }
-.hero .title {
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--hero-text-color);
 }
 .hero-button {
-font-weight: 700;
-font-size: 16px;
-line-height: 1.88;
-letter-spacing: 0.06em;
-color: #FFFFFF;
-background-color: var(--accent-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--hero-text-color);
 }
-/*секция Особливості*/
+/* section Features */
 .feature-list-subtitle {
-  color: var(--title-color);
-  text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 .feature-list-text {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+/* section Work */
+.work-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* section Team */
+.section.team {
+  background-color: var(--bg-secondary-color);
+}
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team-list {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team-name {
+  font-weight: 500;
+  color: var(--h-color);
+}
+.team-proffesion {
+  font-weight: 400;
+}
+/* footer */
+footer {
+  background-color: var(--bg-footer-color);
+}
+.logo-white {
+  color: #ffffff;
+}
+.address.link {
+  font-style: normal;
+  text-decoration: none;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
 }
-/* секция КОМАНДА*/
-.section.team {
-  background-color: #f5f4fa;
-   text-align: center;
-}
-.team-list .name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-  color: var(--title-color);
-}
-.team-list .proffession {
+.contacts.link {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.18;
-}
-footer {
-  background: #2F303A;
-}
-.logo-white {
-  color: #FFFFFF;
-}
-.address.link {
-  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
 }

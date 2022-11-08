@@ -1,0 +1,117 @@
+/*  цвет основного текста #757575
+    вторичный цвет (заголовки) #212121
+    цвет акцента #2196f3
+    белый цвет #FFFFFF*/
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #757575;
+  --h-color: #212121;
+  --accent-color: #2196f3;
+}
+h2 {
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+address {
+  font-style: normal;
+}
+.link {
+  color: #757575;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.accent {
+  color: var(--accent-color);
+}
+.logo {
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+.site-nav .link {
+  color: var(--title-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--accent-color);
+}
+.site-nav .currant {
+  color: var(--accent-color);
+}
+/*секция Герой*/
+section.hero {
+  background-color: #2f303a;
+}
+.hero .title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.hero-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+/*секция Особливості*/
+.feature-list-subtitle {
+  color: var(--title-color);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+.feature-list-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+/* секция КОМАНДА*/
+.section.team {
+  background-color: #f5f4fa;
+  text-align: center;
+}
+.team-list .name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--title-color);
+}
+.team-list .proffession {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+}
+footer {
+  background: #2f303a;
+}
+.logo-white {
+  color: #ffffff;
+}
+.address.link {
+  color: #ffffff;
+}
