@@ -24,8 +24,9 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
 }
-/* ------------------utilitary CSS--------------------- */
+/* ------------------utilitary classes--------------------- */
 .list {
   list-style: none;
 }
@@ -52,12 +53,13 @@ body {
   font-family: inherit;
   font-weight: 500;
   text-align: center;
-  letter-spacing: 0.03em;
   font-size: 16px;
-  line-heigt: 1.62;
+  letter-spacing: inherit;
+  line-height: 1.62;
   background-color: var(--btn-bg-color);
   color: var(--btn-text-color);
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .visually-hidden {
@@ -78,7 +80,6 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  letter-spacing: 0.03em;
 }
 .logo .accent {
   color: var(--accent-color);
@@ -125,12 +126,7 @@ body {
 
 .feature-item.subtitle {
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
-}
-.text {
-  line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 /* ------------------------------section Team */
 .section.team {
@@ -140,16 +136,26 @@ body {
 .team-item.subtitle {
   font-weight: 500;
 }
-.proffesion {
-  font-weight: 400;
+.team-item.text {
+  font-size: 16px;
+  line-height: 1.19;
 }
-/* page --PORTFOLIO-- */
+/* ----------------------------page --PORTFOLIO-- */
 /* section PORTFOLIO */
 .btn.currant {
   background-color: var(--accent-color);
 }
-.btn:hover {
+.btn:hover,
+.btn:focus {
   background-color: var(--accent-color);
+}
+.portf-item.subtitle {
+  font-size: 18px;
+  line-height: 2;
+}
+.portf-item.text {
+  font-size: 16px;
+  line-height: 1.88;
 }
 /* ------------------------------ footer */
 .footer {
@@ -161,10 +167,13 @@ body {
 .address-item {
   font-style: normal;
   text-decoration: none;
-  letter-spacing: 0.03em;
   color: var(--logo-secondaty-color);
 }
 .address-item[href^='mail'],
 .address-item[href^='tel'] {
   color: var(--addr-secondary-color);
+}
+.address-item:hover,
+.address-item:focus {
+  color: var(--accent-color);
 }
